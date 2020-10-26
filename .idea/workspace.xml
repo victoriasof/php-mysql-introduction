@@ -20,8 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="208ab9eb-528b-4d32-866c-ffee434114ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/import.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/homepage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/import.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/insert.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603700883044</updated>
-      <workItem from="1603700884158" duration="2713000" />
+      <workItem from="1603700884158" duration="5980000" />
     </task>
     <servers />
   </component>
@@ -78,14 +83,18 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="314" y="41" width="800" height="719" key="#Plugins/72.27.1294.741@72.27.1294.741" timestamp="1603701004180" />
-    <state x="72" y="250" width="1284" height="301" key="#SQL_Dialects" timestamp="1603706951351">
+    <state x="72" y="250" width="1284" height="301" key="#SQL_Dialects" timestamp="1603708468363">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="72" y="250" width="1284" height="301" key="#SQL_Dialects/72.27.1294.741@72.27.1294.741" timestamp="1603706951351" />
+    <state x="72" y="250" width="1284" height="301" key="#SQL_Dialects/72.27.1294.741@72.27.1294.741" timestamp="1603708468363" />
     <state x="314" y="59" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603706924037">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="314" y="59" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1294.741@72.27.1294.741" timestamp="1603706924037" />
+    <state x="452" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603707018736">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="452" y="146" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/72.27.1294.741@72.27.1294.741" timestamp="1603707018736" />
     <state x="208" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1603704475429">
       <screen x="72" y="27" width="1294" height="741" />
     </state>

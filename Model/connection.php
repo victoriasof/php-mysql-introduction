@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-Class DatabaseLoader {
+Class connection {
 
     function openConnection() : PDO {
         // Try to figure out what these should be for you
