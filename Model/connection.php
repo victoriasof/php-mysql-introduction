@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-Class connection {
+Class Connection {
 
     function openConnection() : PDO {
         // Try to figure out what these should be for you
