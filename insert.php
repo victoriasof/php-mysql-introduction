@@ -6,30 +6,23 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-require 'Model/connection.php';
+//require 'Model/connection.php';
 
 
 $connection = new Connection();
 $pdo = $connection->openConnection();
 
 // heck connection
-if ($pdo->connect_error) {
-    die("Connection failed: " . $pdo->connect_error);
-}
 
-$sql = "SELECT id, first_name, last_name, email, created_at, FROM becode";
+
+
+
+$sql = "SELECT id, first_name, last_name, email, created_at FROM student"; //get from table not from database
 $result = $pdo->query($sql);
 
-if ($result->num_rows > 0) {
-    // output data of each row
-    while ($row = $result->fetch_assoc()) {
+    while ($row = $result->fetchAll()) {
         echo "id: " . $row["id"] . " - Name: " . $row["first_name"] . " " . $row["last_name"] . " " . $row["email"] . " " . $row["created_at"];"<br>";
     }
-} else {
-    echo "0 results";
-}
-$pdo->close();
-
 
 
 

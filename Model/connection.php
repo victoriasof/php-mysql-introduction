@@ -3,6 +3,8 @@
 declare(strict_types=1);
 
 Class Connection {
+    
+    //public string $connect_error;
 
     function openConnection() : PDO {
         // Try to figure out what these should be for you
@@ -21,8 +23,12 @@ Class Connection {
         $pdo = new PDO('mysql:host='. $dbhost .';dbname='. $db, $dbuser, $dbpass, $driverOptions);
 
         // Why we do this here
+
+        //$this->connect_error = "no errors";
+
         return $pdo;
     }
+
 
 }
 
