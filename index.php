@@ -29,6 +29,14 @@ require 'Model/StudentInsert.php';
 require 'Model/StudentLoader.php';
 require 'Controller/InfoController.php';
 
+
+//profile.php?user=$user_id
+require 'View/profile.php';
+require 'Controller/ProfileController.php';
+
+require 'View/overview.php';
+require 'Controller/OverviewController.php';
+
 $infoController = new InfoController();
 $infoController->render();
 
@@ -55,4 +63,13 @@ $connection = new Connection();
 $pdo = $connection->openConnection();
 */
 
+
+/*
+On index.php, list a table with summaries of most of the details of all people
+    Make sure the table shows the following:
+        Their first name
+        Their last name
+        Their email
+        A link to their personal page (profile.php?user=$user_id) (the link can also be, on their name or any other column you prefer)
+*/
 
