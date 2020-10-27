@@ -9,12 +9,13 @@ error_reporting(E_ALL);
 //require 'Model/connection.php';
 
 
-$connection = new Connection();
-$pdo = $connection->openConnection();
 
 //$pdo = openConnection();
 
-if(!empty($_POST['first_name']) && !empty($_POST['last_name'])) {
+
+/*
+if(!empty($_POST['first_name']) && !empty($_POST['last_name']) &&!empty($_POST['email'])) {
+
 
     if (empty($_POST['id'])) {//switched if statement
         $handle = $pdo->prepare('INSERT INTO user (first_name, last_name) VALUES (:first_name, :last_name)');
@@ -25,6 +26,9 @@ if(!empty($_POST['first_name']) && !empty($_POST['last_name'])) {
         $message = 'Your record has been updated';
     }
 }
+*/
+
+
 /*
 I AM MIXING PDO AND SQL. ALWAYS USE PDO
 
@@ -45,6 +49,8 @@ $result = $pdo->query($sql);
     }
 */
 
+
+/*
 $firstName = $lastName= $email = "";
 $firstNameErr = $lastNameErr = $emailErr = "";
 
@@ -76,6 +82,8 @@ function test_input($data) {
     return $data;
 }
 
+*/
+
 ?>
 
 <!doctype html>
@@ -90,14 +98,14 @@ function test_input($data) {
 <body>
 
 <form method ="post">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="<?php echo $firstName?>"><br>
+    <label for="firstname">First name:</label><br>
+    <input type="text" id="firstname" name="firstname" value=""><br>
 
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="<?php echo $lastName?>"><br>
+    <label for="lastname">Last name:</label><br>
+    <input type="text" id="lastname" name="lastname" value=""><br>
 
     <label for="email">Email:</label><br>
-    <input type="text" id="email" name="email" value="<?php echo $email?>">
+    <input type="text" id="email" name="email" value="">
 
     <input type="submit" value="Submit">
 </form>

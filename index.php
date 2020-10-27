@@ -21,14 +21,23 @@ function whatIsHappening() {
 
 whatIsHappening(); // call function
 
+
+require 'Model/connection.php';
+require 'View/insert.php';
+require 'Model/Student.php';
+require 'Model/StudentInsert.php';
+require 'Model/StudentLoader.php';
+require 'Controller/InfoController.php';
+
+$infoController = new InfoController();
+$infoController->render();
+
+
 //include all your model files here
 //require 'Model/User.php';
 //include all your controllers here
 //require 'Controller/HomepageController.php';
 //require 'Controller/InfoController.php';
-
-require 'Model/connection.php';
-require 'insert.php';
 
 //you could write a simple IF here based on some $_GET or $_POST vars, to choose your controller
 //this file should never be more than 20 lines of code!
@@ -40,4 +49,10 @@ if(isset($_GET['page']) && $_GET['page'] === 'info') {
 }
 $controller->render($_GET, $_POST);
 */
+
+/*
+$connection = new Connection();
+$pdo = $connection->openConnection();
+*/
+
 
