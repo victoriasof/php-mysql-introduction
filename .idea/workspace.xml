@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="208ab9eb-528b-4d32-866c-ffee434114ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Controller/OverviewController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/ProfileController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/overview.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/profile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/OverviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/OverviewController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/overview.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/overview.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/profile.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,8 @@
       <option name="presentableId" value="Default" />
       <updated>1603700883044</updated>
       <workItem from="1603700884158" duration="16706000" />
-      <workItem from="1603785653628" duration="13828000" />
+      <workItem from="1603785653628" duration="14994000" />
+      <workItem from="1603871713846" duration="3493000" />
     </task>
     <servers />
   </component>
