@@ -4,7 +4,7 @@ Class RegisterController {
 
     public function render(){
 
-        $firstName = $lastName = $email = "";
+        $firstName = $lastName = $email = $password = "";
         $firstNameErrorMessage = $lastNameErrorMessage = $emailErrorMessage = $passwordErrorMessage = "";
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -12,7 +12,7 @@ Class RegisterController {
             $firstName = test_input($_POST['firstName']);
             $lastName = test_input($_POST['lastName']);
             $email = test_input($_POST['email']);
-            $password = test_input($_POST['email']);
+            $password = test_input($_POST['password']);
 
         }
 
@@ -33,8 +33,10 @@ Class RegisterController {
         }
 
 
-        $pdo = Connection::openConnection();
-        $statement = $pdo->prepare("INSERT INTO students(first_name, last_name, email, password)VALUES(:firstName, :lastName, :email, :password)");
+        $connection = new Connection();
+        $pdo =  $connection->openConnection();
+
+        $statement = $pdo->prepare("INSERT INTO student(first_name, last_name, email, password)VALUES(:firstName, :lastName, :email, :password)");
 
         $statement->bindValue(":fistName", $firstName);
         $statement->bindValue(":lastName", $lastName);
@@ -42,6 +44,10 @@ Class RegisterController {
         $statement->bindValue(":password", $password);
 
         $statement->execute();
+
+
+
+
 
 
         require 'View/register.php';
