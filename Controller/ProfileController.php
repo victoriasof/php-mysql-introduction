@@ -1,22 +1,13 @@
 <?php
-declare(strict_types=1);
 
-require 'Model/connection.php';
-
-class ProfileController
-{
-    public function render()
-    {
-        session_start();
-
-
-        if ($_SESSION['user'] === $_GET['user']){
-
-            
-        }
-
-        $connection = new Connection();
-
+Class ProfileController{
+    public function render() {
+        $id = $_GET['user'];
+        $studentLoader = new StudentLoader();
+        $currentStudent = $studentLoader->getStudents()[$id];
+        $data = @file_get_contents('https://api.thecatapi.com/v1/images/search');
+        $dataDecode = json_decode($data, true);
+        $img = $dataDecode[0]['url'];
 
         require 'View/profile.php';
     }

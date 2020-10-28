@@ -1,13 +1,12 @@
-<?php require 'View/includes/header.php'; ?>
+<?php require 'View/partials/header.php' ?>
 
-<?php
-echo 'Name: ' . $student['first_name'] . ' ' . $student['last_name'] . '<br>Email: ' . $student['email'] . '<br>Created at: ' . $student['created_at'];
+<div class="container">
+    <h1>Profile</h1>
+    <img src="<?php echo $img ?>" style="width: 200px;">
+    <p>Firstname: <?php echo $currentStudent->getFirstName() ?></p>
+    <p>Lastname: <?php echo $currentStudent->getLastName() ?></p>
+    <p>Email: <?php echo $currentStudent->getEmail() ?></p>
+    <p>Created At: <?php echo $currentStudent->getCreatedAt() ?></p>
+</div>
 
-?>
-    <form style="<?php echo $show ?>" method="post">
-        <input type="hidden" value="<?php echo $id['id'] ?>">
-        <input type="submit" value="edit">
-        <input type="submit" value="delete">
-    </form>
-
-<?php require 'View/includes/footer.php'; ?>
+<?php require 'View/partials/footer.php' ?>
