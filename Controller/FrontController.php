@@ -1,7 +1,7 @@
 <?php
 class FrontController {
     public function render() {
-        require 'View/partials/header.php';
+        require 'View/includes/header.php';
         // Get all students
         $studentLoader = new StudentLoader();
         $students = $studentLoader->getStudents();
@@ -9,6 +9,6 @@ class FrontController {
             // If there are students in the database show a table listing them
             require 'View/table.php';
         }
-        require 'View/partials/footer.php';
+        require 'View/includes/footer.php';
     }
 }

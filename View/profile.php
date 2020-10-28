@@ -1,4 +1,4 @@
-<?php require 'View/partials/header.php' ?>
+<?php require 'View/includes/header.php' ?>
 
 <div class="container">
     <h1>Profile</h1>
@@ -9,4 +9,4 @@
     <p>Created At: <?php echo $currentStudent->getCreatedAt() ?></p>
 </div>
 
-<?php require 'View/partials/footer.php' ?>
+<?php require 'View/includes/footer.php' ?>

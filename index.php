@@ -21,55 +21,45 @@ function whatIsHappening() {
 
 whatIsHappening(); // call function
 
-
 require 'Model/connection.php';
-require 'View/insert.php';
 require 'Model/Student.php';
 require 'Model/StudentInsert.php';
 require 'Model/StudentLoader.php';
-require 'Controller/InfoController.php';
+require 'Model/Auth.php';
 
 
-//profile.php?user=$user_id
-require 'View/profile.php';
-require 'Controller/ProfileController.php';
-
-require 'View/overview.php';
-require 'Controller/OverviewController.php';
-
-$infoController = new InfoController();
-$infoController->render();
-
-
-//include all your model files here
-//require 'Model/User.php';
-//include all your controllers here
-//require 'Controller/HomepageController.php';
-//require 'Controller/InfoController.php';
-
-//you could write a simple IF here based on some $_GET or $_POST vars, to choose your controller
-//this file should never be more than 20 lines of code!
-
-/*
-$controller = new HomepageController();
-if(isset($_GET['page']) && $_GET['page'] === 'info') {
-    $controller = new InfoController();
+function test_input($data){
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
 }
-$controller->render($_GET, $_POST);
-*/
 
-/*
-$connection = new Connection();
-$pdo = $connection->openConnection();
-*/
+if (isset($_GET['user'])){
+    require 'Controller/ProfileController.php';
+    $profileController = new ProfileController();
+    $profileController->render();
+}
+else if (isset($_GET['page'])){
+    if ($_GET['page'] === 'register'){
 
+        require 'Controller/RegisterController.php';
+        $registerController = new RegisterController();
+        $registerController->render();
+    }
+    else if($_GET['page'] === 'login'){
 
-/*
-On index.php, list a table with summaries of most of the details of all people
-    Make sure the table shows the following:
-        Their first name
-        Their last name
-        Their email
-        A link to their personal page (profile.php?user=$user_id) (the link can also be, on their name or any other column you prefer)
-*/
+        require 'Controller/LoginController.php';
+        $loginController = new LoginController();
+        $loginController->render();
+    }
+
+}else {
+
+    require 'Controller/FrontController.php';
+    $frontController = new FrontController();
+    $frontController->render();
+
+}
+
 

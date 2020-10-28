@@ -6,7 +6,7 @@ Class Connection {
 
     //public string $connect_error;
 
-    function openConnection() : PDO {
+    public static function openConnection() : PDO {
         // Try to figure out what these should be for you
         $dbhost    = "localhost";//probably localhost
         $dbuser    = "becode";
@@ -20,13 +20,12 @@ Class Connection {
         ];
 
         // Try to understand what happens here
-        $pdo = new PDO('mysql:host='. $dbhost .';dbname='. $db, $dbuser, $dbpass, $driverOptions);
+        return new PDO('mysql:host='. $dbhost .';dbname='. $db, $dbuser, $dbpass, $driverOptions);
 
         // Why we do this here
 
         //$this->connect_error = "no errors";
 
-        return $pdo;
     }
 
 

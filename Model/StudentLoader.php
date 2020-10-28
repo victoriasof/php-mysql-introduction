@@ -1,20 +1,18 @@
 <?php
 
-
 class StudentLoader extends Connection {
 
     private array $students = [];
 
-
-    public function __construct(array $students)
+    public function __construct()
     {
         //$this->students = $students;
 
-        $handle = $this->openConnection()->prepare("INSERT * FROM student");
+        $handle = $this->openConnection()->prepare("SELECT * FROM students");
         $handle->execute();
         foreach ($handle->fetchAll() as $student) {
 
-            $this->students[$student['id']] = new $student($student['firstname'], $student['lastname'], $student['email']);
+            $this->students[$student['id']] = new Student($student['id'], $student['firstname'], $student['lastname'], $student['email'], $student['created_at']);
 
         }
     }
