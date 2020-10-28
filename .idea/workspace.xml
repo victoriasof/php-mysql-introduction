@@ -20,22 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="208ab9eb-528b-4d32-866c-ffee434114ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Controller/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/Auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/FrontController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/StudentLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/StudentLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/includes/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/includes/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/InfoController.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +69,7 @@
       <updated>1603700883044</updated>
       <workItem from="1603700884158" duration="16706000" />
       <workItem from="1603785653628" duration="14994000" />
-      <workItem from="1603871713846" duration="10283000" />
+      <workItem from="1603871713846" duration="11029000" />
     </task>
     <servers />
   </component>
