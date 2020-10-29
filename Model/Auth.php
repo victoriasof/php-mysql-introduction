@@ -54,7 +54,7 @@ class Auth {
     public function getStudent(string $email) {
         $pdo = Connection::openConnection();
         $statement = $pdo->prepare("
-                    SELECT id, password FROM students
+                    SELECT id, password FROM student
                     WHERE email = :email
                 ");
         $statement->bindValue(":email", $email);
