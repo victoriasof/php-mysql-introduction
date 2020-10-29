@@ -23,6 +23,4 @@ class StudentLoader extends Connection {
         return $this->students;
     }
 
-
-
 }

@@ -1,46 +1,41 @@
 <?php
-
 class LoginController {
-
-    public function render(){
-
+    public function render() {
         $email = $password = "";
-        $emailErrorMessage =$passwordErrorMessage = "";
+        $emailErrorMessage = $passwordErrorMessage = $loginError = "";
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-            $email = test_input($_POST['email']);
-            $password = test_input($_POST['password']);
-            $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-            $authorization = new Auth();
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $auth = new Auth();
+            $email = $auth->test_input($_POST['email']);
+            $password = $auth->test_input($_POST['password']);
+            $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
-            if (empty($email)){
+            if (empty($email)) {
                 $emailErrorMessage = 'Email is required';
-
+            }else if (!$auth->emailValidation($email)) {
+                $emailErrorMessage = 'Invalid email format';
             }
 
-            if (empty($password)){
-
+            if (empty($password)) {
                 $passwordErrorMessage = 'Password is required';
             }
 
-            if (empty($emailErrorMessage) && empty($passwordErrorMessage)){
+            if (empty($emailErrorMessage) && empty($passwordErrorMessage)) {
+                $currentUser = $auth->getStudent($email);
+                $isAuthenticated = password_verify($password, $currentUser['password']);
 
-                $pdo = Connection::openConnection();
-                $statement = $pdo->prepare("SELECT password FROM student WHERE email = :email");
+                if ($isAuthenticated) {
+                    $_SESSION['id'] = $currentUser['id'];
+                    $_SESSION['email'] = $email;
+                    $_SESSION['password'] = $hashedPassword;
+                    $_SESSION['isAuthenticated'] = $isAuthenticated;
+                    $auth->redirectToHome();
+                }else {
+                    $loginError = "Invalid credentials";
+                }
             }
-
-            $statement->bindValue(":email", $email);
-            $statement->execute();
-            $returnedPassword = $statement->fetchColumn();
-            if(password_verify($password, $returnedPassword)){
-                echo 'correct credentials';
-            }
-
-
         }
 
-    require 'View/login.php';
-
+        require 'View/login.php';
     }
-
 }
