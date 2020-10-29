@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="208ab9eb-528b-4d32-866c-ffee434114ae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +71,7 @@
       <workItem from="1603700884158" duration="16706000" />
       <workItem from="1603785653628" duration="14994000" />
       <workItem from="1603871713846" duration="17641000" />
-      <workItem from="1603959491457" duration="10213000" />
+      <workItem from="1603959491457" duration="13438000" />
     </task>
     <servers />
   </component>
@@ -97,10 +95,10 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="314" y="41" width="800" height="719" key="#Plugins/72.27.1294.741@72.27.1294.741" timestamp="1603701004180" />
-    <state x="72" y="250" width="1284" height="301" key="#SQL_Dialects" timestamp="1603895827317">
+    <state x="72" y="250" width="1284" height="301" key="#SQL_Dialects" timestamp="1603977105677">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="72" y="250" width="1284" height="301" key="#SQL_Dialects/72.27.1294.741@72.27.1294.741" timestamp="1603895827317" />
+    <state x="72" y="250" width="1284" height="301" key="#SQL_Dialects/72.27.1294.741@72.27.1294.741" timestamp="1603977105677" />
     <state x="314" y="59" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603706924037">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
